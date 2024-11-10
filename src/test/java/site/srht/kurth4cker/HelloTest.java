@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HelloTest {
     @Test
-    void greeting() {
+    void format() {
         String[] words = {
             "world",
             "kurth4cker",
         };
 
         for (var word : words) {
-            var got = Hello.greeting(word);
+            var got = Hello.format(word);
             assertEquals(String.format("hello %s", word), got);
         }
     }

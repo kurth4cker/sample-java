@@ -7,7 +7,7 @@ public final class Hello {
     private Hello() {
     }
 
-    public static String greeting(String to) {
+    public static String format(String to) {
         return String.format("hello %s", to);
     }
 }
