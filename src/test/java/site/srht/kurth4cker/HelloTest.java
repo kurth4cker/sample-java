@@ -10,12 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class HelloTest {
     @Test
     void greeting() {
-        String got;
+        String[] words = {
+            "world",
+            "kurth4cker",
+        };
 
-        got = Hello.greeting("world");
-        assertEquals("hello world", got);
-
-        got = Hello.greeting("kurth4cker");
-        assertEquals("hello kurth4cker", got);
+        for (var word : words) {
+            var got = Hello.greeting(word);
+            assertEquals(String.format("hello %s", word), got);
+        }
     }
 }
