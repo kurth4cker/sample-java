@@ -11,6 +11,12 @@ public final class Iterative {
     }
 
     public static String intToString(int val, int radix) {
-        return "0";
+        if (val == 0) {
+            return "0";
+        }
+
+        var sb = new StringBuilder();
+        sb.append((char)('0' + val));
+        return sb.toString();
     }
 }

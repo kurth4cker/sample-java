@@ -10,8 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class IterativeTest {
     @Test
     void intToString() {
-        var got = Iterative.intToString(0);
-        var expected = Integer.toString(0);
-        assertEquals(expected, got);
+        int[] numbers = {
+            0, 2, 4, 7, 9,
+        };
+
+        for (var number : numbers) {
+            var got = Iterative.intToString(number);
+            var expected = Integer.toString(number);
+            assertEquals(expected, got);
+        }
     }
 }
