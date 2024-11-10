@@ -5,7 +5,6 @@ package site.srht.kurth4cker;
 
 public final class Main {
     public static void main(String[] args) {
-        var greeting = Hello.format("world");
-        System.out.println(greeting);
+        System.out.println("hello world");
     }
 }
