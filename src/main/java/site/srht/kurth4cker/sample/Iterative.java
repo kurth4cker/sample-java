@@ -6,8 +6,11 @@ package site.srht.kurth4cker.sample;
 public final class Iterative {
     private Iterative() {}
 
+    public static String intToString(int val) {
+        return intToString(val, 10);
+    }
+
     public static String intToString(int val, int radix) {
-        // TODO: implement
-        return "";
+        return "0";
     }
 }
