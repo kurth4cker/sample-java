@@ -15,7 +15,7 @@ public final class Iterative {
         return String.valueOf((char) ('0' + val));
     }
 
-    public static String reversed(String str) {
+    public static String reverse(String str) {
         var sb = new StringBuilder();
 
         for (int i = str.length() - 1; i >= 0; i--) {
