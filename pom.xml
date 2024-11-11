@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>site.srht.kurth4cker.Main</mainClass>
+                            <mainClass>site.srht.kurth4cker.sample.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
