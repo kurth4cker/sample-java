@@ -16,8 +16,6 @@ public final class Iterative {
         }
 
         // TODO: implement multi digit parsing
-        var sb = new StringBuilder();
-        sb.append((char)('0' + val));
-        return sb.toString();
+        return String.valueOf((char) ('0' + val));
     }
 }
