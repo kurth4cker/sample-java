@@ -31,8 +31,8 @@ class IterativeTest {
         };
 
         for (var tc : test_cases) {
-            var got = Iterative.reverse(tc[0]);
             var expected = tc[1];
+            var got = Iterative.reverse(tc[0]);
             assertEquals(expected, got);
         }
     }

@@ -16,12 +16,8 @@ public final class Iterative {
     }
 
     public static String reverse(String str) {
-        var sb = new StringBuilder();
-
-        for (int i = str.length() - 1; i >= 0; i--) {
-            sb.append(str.charAt(i));
-        }
-
+        var sb = new StringBuilder(str);
+        sb.reverse();
         return sb.toString();
     }
 }
