@@ -20,12 +20,12 @@ public final class Iterative {
     }
 
     public static String reversed(String str) {
-        var result = "";
+        var array = new char[str.length()];
 
-        for (int i = str.length() - 1; i >= 0; i--) {
-            result += str.charAt(i);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = str.charAt(array.length - i - 1);
         }
 
-        return result;
+        return new String(array);
     }
 }
