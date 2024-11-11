@@ -12,6 +12,7 @@ class IterativeTest {
     void intToString() {
         int[] numbers = {
             0, 2, 4, 7, 9,
+            // TODO: add multi digit tests
         };
 
         for (var number : numbers) {
