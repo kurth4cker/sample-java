@@ -24,16 +24,16 @@ class IterativeTest {
 
     @Test
     void reverse() {
-        String[][] test_cases = {
-            {"ali", "ila"},
-            {"kurth4cker", "rekc4htruk"},
-            {"hello", "olleh"},
+        record TestCase(String given, String expected) {}
+        TestCase[] test_cases = {
+            new TestCase("ali", "ila"),
+            new TestCase("kurth4cker", "rekc4htruk"),
+            new TestCase("hello", "olleh"),
         };
 
         for (var tc : test_cases) {
-            var expected = tc[1];
-            var got = Iterative.reverse(tc[0]);
-            assertEquals(expected, got);
+            var got = Iterative.reverse(tc.given);
+            assertEquals(tc.expected, got);
         }
     }
 }
