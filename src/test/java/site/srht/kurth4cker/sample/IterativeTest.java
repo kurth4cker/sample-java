@@ -21,19 +21,4 @@ class IterativeTest {
             assertEquals(expected, got);
         }
     }
-
-    @Test
-    void reverse() {
-        record TestCase(String given, String expected) {}
-        TestCase[] test_cases = {
-            new TestCase("ali", "ila"),
-            new TestCase("kurth4cker", "rekc4htruk"),
-            new TestCase("hello", "olleh"),
-        };
-
-        for (var tc : test_cases) {
-            var got = Iterative.reverse(tc.given);
-            assertEquals(tc.expected, got);
-        }
-    }
 }
