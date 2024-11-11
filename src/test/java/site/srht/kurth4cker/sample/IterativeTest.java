@@ -21,4 +21,19 @@ class IterativeTest {
             assertEquals(expected, got);
         }
     }
+
+    @Test
+    void reverse() {
+        String[][] test_cases = {
+            {"ali", "ila"},
+            {"kurth4cker", "rekc4htruk"},
+            {"hello", "olleh"},
+        };
+
+        for (var tc : test_cases) {
+            var got = Iterative.reversed(tc[0]);
+            var expected = tc[1];
+            assertEquals(expected, got);
+        }
+    }
 }

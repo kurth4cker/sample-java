@@ -18,4 +18,14 @@ public final class Iterative {
         // TODO: implement multi digit parsing
         return String.valueOf((char) ('0' + val));
     }
+
+    public static String reversed(String str) {
+        var result = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            result += str.charAt(i);
+        }
+
+        return result;
+    }
 }
