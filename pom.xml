@@ -10,6 +10,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mainClass>site.srht.kurth4cker.sample.App</mainClass>
     </properties>
 
     <dependencyManagement>
@@ -40,10 +41,23 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>site.srht.kurth4cker.sample.App</mainClass>
+                            <mainClass>${mainClass}</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>${mainClass}</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>tidy-maven-plugin</artifactId>
+                <version>1.3.0</version>
             </plugin>
         </plugins>
     </build>
