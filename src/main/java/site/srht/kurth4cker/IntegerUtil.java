@@ -13,4 +13,24 @@ public class IntegerUtil {
         num = Math.abs(num);
         return (num & (num - 1)) == 0;
     }
+
+    public static boolean isPrime(int num) {
+        if (num < 2) {
+            return false;
+        }
+
+        for (var i : new int[]{2, 3, 5, 7}) {
+            if (num != i && num % i == 0) {
+                return false;
+            }
+        }
+
+        for (int i = 7; i * i <= num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
