@@ -1,6 +1,6 @@
-# application-maven-java - SampleApplication
+# sample-application
 
-Template for pure Java application with Apache Maven.
+Sample Java application. Just for personal training.
 
 
 ## Building
@@ -19,14 +19,17 @@ This project uses Apache Maven as build tool.
     # clean
     mvn clean
 
+    # execute configured application (requires manual compile)
+    mvn exec:java
+
 After building package, jar file is located at `target` directory. Run it with
 
-    java -jar target/SampleApplication-XXXX.jar
+    java -jar target/sample-application-XXXX.jar
 
 where XXXX is version number.
 
 
 ## Copying
 
-**application-maven-java** is licensed under Apache-2.0 license. See file
+**sample-application-java** is licensed under Apache-2.0 license. See file
 COPYING for details.
