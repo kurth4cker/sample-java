@@ -11,10 +11,5 @@ public final class App {
         IntStream.range(0, 100)
             .filter(NumberUtil::isPrime)
             .forEach(System.out::println);
-        // for (int i = 0; i < 100; i++) {
-        //     if (NumberUtil.isPrime(i)) {
-        //         System.out.println(i);
-        //     }
-        // }
     }
 }
