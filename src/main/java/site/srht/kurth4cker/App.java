@@ -45,6 +45,7 @@ class Student {
                 this.lastName);
     }
 
+    @Override
     public String toString() {
         return String.format("%s %s",
                 this.getName(),
