@@ -8,6 +8,7 @@
 
     <properties>
         <maven.compiler.release>23</maven.compiler.release>
+        <maven.compiler.enablePreview>true</maven.compiler.enablePreview>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mainClass>site.srht.kurth4cker.App</mainClass>
     </properties>
