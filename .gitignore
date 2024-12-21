@@ -39,3 +39,6 @@ build/
 
 # custom for IntelliJ IDEA
 .idea
+
+# don't track files in trash folder
+trash
