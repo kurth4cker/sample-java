@@ -5,7 +5,7 @@ package site.srht.kurth4cker.unstable;
 
 import java.util.Arrays;
 
-public class Stack<E> {
+public class Stack<E> implements LIFO<E> {
     private static int DEFAULT_INITIAL_CAPACITY = 8;
 
     private Object[] elements;
