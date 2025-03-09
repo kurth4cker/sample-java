@@ -30,11 +30,6 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>site.srht.kurth4cker</groupId>
-            <artifactId>sample</artifactId>
-            <version>0.0</version>
-        </dependency>
     </dependencies>
 
     <build>
