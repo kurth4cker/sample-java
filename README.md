@@ -19,8 +19,8 @@ This project uses Apache Maven as build tool.
     # clean
     mvn clean
 
-    # execute configured application (requires manual compile)
-    mvn exec:java
+    # execute configured application
+    mvn compile exec:java
 
 After building package, jar file is located at `target` directory. Run it with
 
